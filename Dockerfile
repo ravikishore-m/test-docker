@@ -1,8 +1,7 @@
 FROM alpine:3.21.2
 
-# renovate: datasource=github-releases packageName=hashicorp/vault ARG VAULT_VERSION=1.19.0
+# renovate: datasource=github-releases packageName=hashicorp/vault
 ARG VAULT_VERSION=1.19.0
-
 
 # renovate: datasource=github-releases packageName=kubernetes/kubernetes ARG KUBECTL_VERSION=1.32.2
 ARG KUBECTL_VERSION=1.32.2
