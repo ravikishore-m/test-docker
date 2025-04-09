@@ -1,0 +1,14 @@
+{
+    "extends": ["config:base"],
+    "customManagers": [
+      {
+        "customType": "regex",
+        "description": "Update _VERSION variables in Dockerfiles",
+        "fileMatch": ["Dockerfile$"],
+        "matchStrings": [
+          "# renovate: datasource=(?<datasource>[a-z-]+) packageName=(?<packageName>[^\\s]+)\\s+ARG (?<depName>[^=]+)=(?<currentValue>[^\\s]+)"
+        ]
+      }
+    ]
+  }
+  
