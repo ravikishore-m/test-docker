@@ -6,7 +6,7 @@
         "description": "Update _VERSION variables in Dockerfiles",
         "fileMatch": ["Dockerfile$", "Dockerfile-new$"],
         "matchStrings": [
-           "# renovate: datasource=(?<datasource>[a-z-]+) packageName=(?<packageName>[^\\s]+) ARG (?<depName>[^=]+)=(?<currentValue>[^\\s]+)"
+          "# renovate: datasource=(?<datasource>[a-z-]+) packageName=(?<packageName>[^\\s]+) ARG (?<depName>[A-Z0-9_]+)=(?<currentValue>[^\\s]+)"
         ]
       }
     ]
