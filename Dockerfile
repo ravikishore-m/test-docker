@@ -1,4 +1,4 @@
-FROM alpine:3.21.2
+FROM alpine:3.21.3
 
 # renovate: datasource=github-releases packageName=hashicorp/vault ARG VAULT_VERSION=1.19.0
 ARG VAULT_VERSION=1.19.0
